@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <p class="nav-heading">Sorting Visualizer</p>
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=7 step=1 value=4">
+            </div>
+            <div class="header_right">
+                <div class="algos">
+                    <button>Bubble</button>
+                    <button style="margin-right: 0px;">Selection</button>
+                    <button>Merge</button>
+                    <button>Insertion</button>
+                    <button>Quick</button>
+                    <button style="margin-right: 0px;">Heap</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="Info_Cont1">
+            <h3 style="text-decoration:none;">TIME COMPLEXITY</h3>
+            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Time_Worst"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Average case:</p>
+                    <p id="Time_Average"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Best case:</p>
+                    <p id="Time_Best"></p>
+                </div>
+            </div>
+
+            <!-- Moving the manual input and generate button below TIME COMPLEXITY -->
+            <div class="manual-inputs">
+                <p>Manual array input :</p>
+                <input id="a_manual" type="text" placeholder="(e.g., 10,20,30)">
+                <button id="a_generate">Generate New Array!</button>
+            </div>
+        </div>
+
+        <div id="array_container"></div>
+
+        <div id="Info_Cont2">
+            <h3 style="text-decoration: none;">SPACE COMPLEXITY</h3>
+            <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Space_Worst"></p>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+    <footer></footer>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/visualizations.js"></script>
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+</html>

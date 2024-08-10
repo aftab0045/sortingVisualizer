@@ -1,0 +1,268 @@
+/*
+    *****************
+    DONE BY:-   Aftab Attar
+    *****************
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  column-gap: 10%;
+  padding: 0% 5%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+nav .array-inputs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+.Info_Cont1 {
+  text-shadow: #0d0d0d;
+}
+
+/* New styling for the manual-inputs section */
+.manual-inputs {
+  margin-top: 20px;
+  text-align: center; /* Center-align the input and button */
+}
+
+.manual-inputs input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.manual-inputs button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.manual-inputs button:hover {
+  color: black;
+}
+
+
+nav .array-inputs #a_size,
+nav .array-inputs #a_speed {
+  padding: 5% 0%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+nav .array-inputs #a_size:focus,
+nav .array-inputs #a_speed:focus {
+  border-color: #ff4081;
+  box-shadow: 0 0 10px #ff4081;
+}
+
+.manual-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  padding: 5px;
+}
+
+.manual-inputs p {
+  margin-bottom: 10px;
+}
+
+.manual-inputs input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 40px;
+  border: 2px solid rgb(169, 165, 165);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.manual-inputs  #a_manual:hover {
+  color: rgb(9, 9, 9);
+  transform: scale(1.05);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.manual-inputs  #a_generate {
+  background-color:#0d0d0d;
+  border: none;
+  outline: none;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.manual-inputs  #a_generate:hover {
+  background-color: #ff4081;
+  color: white;
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+nav .header_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-heading {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: xxx-large;
+}
+
+nav .header_right .algos {
+  display: grid;
+  grid-template-columns: repeat(6, 16.66667%);
+  place-content: center;
+  padding: 2% 0%;
+}
+
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: x-large;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav .header_right .algos button:hover {
+  background-color: #ff4081;
+  color: white;
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: #ff4081;
+}
+
+nav .header_right .algos .butt_selected {
+  background-color: white;
+  border-radius: 5px;
+  color: #ff4081;
+}
+
+nav .header_right .algos .butt_selected:hover {
+  background-color: #ff4081;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  .tabs::after {
+    pointer-events: none;
+    content: "";
+    width: calc(100% / var(--count));
+    height: 100%;
+    background: hsl(0 0% 100%);
+    position: absolute;
+    border-radius: calc(var(--radius) - var(--border));
+    mix-blend-mode: difference;
+    translate: calc(var(--active, 0) * 100%) 0;
+    transition: translate, outline-color;
+    transition-duration: var(--speed);
+    transition-timing-function: var(--ease, ease);
+    outline: 2px solid transparent;
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: auto 1fr auto;
+}
+
+section .Complexity_Containers {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+
+section #Info_Cont1 {
+  padding: 20% 10%;
+}
+
+section #Info_Cont1 h3 {
+  text-decoration: underline;
+}
+
+section #array_container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; /* Center align the array bars */
+  width: 100%;
+  height: 70vh; /* Maintain the height as per original design */
+  position: relative; /* Ensure the container is positioned relatively */
+  background-color: transparent;
+}
+
+section #Info_Cont2 {
+  padding: 20% 10%;
+}
+
+section #Info_Cont2 h3 {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+
+/*
+    *****************
+    DONE BY:-   Aftab Attar
+    *****************
+*/
+
+
+
+
